@@ -1,12 +1,20 @@
+"""
+A Python wrapper for the GF (Grammatical Framework) REPL.
+"""
+
 import os
 import subprocess
+
+
+# If 'gf' is not found, you may set this to the actual path to your gf executable
+GF_BIN = "gf"
 
 
 # Basically a unique string that will never show up in the output (hopefully)
 COMMAND_SEPARATOR = "COMMAND_SEPARATOR===??!<>239'_"
 
 class GfRepl(object):
-    def __init__(self, gf_bin = 'gf'):
+    def __init__(self, gf_bin = GF_BIN):
         self.pipe = os.pipe()   # (read, write)
         self.gfproc = subprocess.Popen((gf_bin, '--run'),
                           stdin = subprocess.PIPE,
