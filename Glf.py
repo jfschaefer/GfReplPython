@@ -17,11 +17,11 @@ GF_BIN = '/usr/bin/gf'
 MMT_PORT = '8080'
 
 GF_CATEGORY = 'S'                    # category for parsing
-MMT_ARCHIVE = 'teaching/lbs1920'
-SEMANTICS_VIEW = 'http://mathhub.info/teaching/lbs1920/assignment3/A3SemanticsConstruction'
+MMT_ARCHIVE = 'Teaching/lbs1920'
+SEMANTICS_VIEW = 'http://mathhub.info/Teaching/lbs1920/assignment3/A3SemanticsConstruction'
 
 
-GF_CONCRETE_FILE = '/home/jfs/mmt/content/MathHub/teaching/lbs1920/source/assignment3/Assignment3Eng.gf'
+GF_CONCRETE_FILE = '/home/jfs/mmt/content/MathHub/Teaching/lbs1920/source/assignment3/Assignment3Eng.gf'
 
 # the following files have to be relative to the source directory in the MMT archive
 GF_ABSTRACT_FILES = ['assignment3/Assignment3.gf']
